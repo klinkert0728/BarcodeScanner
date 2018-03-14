@@ -383,10 +383,6 @@ open class BarcodeScannerController: UIViewController {
       },
       completion: { _ in
         flashView.removeFromSuperview()
-
-        if whenProcessing {
-          self.status = Status(state: .processing)
-        }
     })
   }
 
